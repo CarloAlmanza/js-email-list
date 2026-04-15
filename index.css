@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.list-group-item {
+    transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f5ff;
+    transform: translateX(5px);
+}

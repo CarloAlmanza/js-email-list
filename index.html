@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
+    <title>Email Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div class="container py-5">
+
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="fw-bold">📧 Email Dashboard</h1>
+            <button id="generateBtn" class="btn btn-primary">
+                🔄 Genera Email
+            </button>
+        </div>
+
+        <!-- Card -->
+        <div class="card shadow border-0">
+            <div class="card-body">
+
+                <!-- Loader -->
+                <div id="loader" class="text-center my-3 d-none">
+                    <div class="spinner-border text-primary"></div>
+                    <p class="mt-2">Caricamento email...</p>
+                </div>
+
+                <!-- Lista -->
+                <ul id="emailList" class="list-group list-group-flush"></ul>
+
+            </div>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
